@@ -78,13 +78,13 @@ Ext.define('TutorialApp.view.main.Main', {
                 xtype: 'postgrid'
             }]
         },
-        /* {
-               title: 'Users',
-               iconCls: 'fa-user',
-               items: [{
-                   xtype: 'usergrid'
-               }]
-           }, */
+        {
+            title: 'Users',
+            iconCls: 'fa-user',
+            items: [{
+                xtype: 'usergrid'
+            }]
+        },
         {
             title: 'Groups',
             iconCls: 'fa-users',
