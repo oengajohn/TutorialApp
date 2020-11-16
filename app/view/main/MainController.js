@@ -8,7 +8,7 @@ Ext.define('TutorialApp.view.main.MainController', {
     alias: 'controller.main',
 
     onItemSelected: function(sender, record) {
-        console.log(record);
+
     },
 
     onConfirm: function(choice) {
