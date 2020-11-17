@@ -1,6 +1,9 @@
 Ext.define('TutorialApp.view.users.UserGridController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.usergridcontroller',
+    mixins: [
+        'TutorialApp.view.mixins.GridMixin'
+    ],
     init: function() {
 
     },
@@ -20,15 +23,5 @@ Ext.define('TutorialApp.view.users.UserGridController', {
             windowContainer.lookupReference('form').getForm().loadRecord(record);
         }
     },
-    getSelectedRecord: function() {
-        var me = this;
 
-        var records = me.getView().getSelectionModel().getSelection();
-        if (records[0]) {
-            //processing
-            return records[0];
-        } else {
-            Ext.Msg.alert('No Item Selected', 'Please select an item from the list');
-        }
-    }
 })
