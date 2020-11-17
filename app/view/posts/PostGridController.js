@@ -1,15 +1,13 @@
-Ext.define('TutorialApp.view.users.UserGridController', {
+Ext.define('TutorialApp.view.posts.PostGridController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.usergridcontroller',
+    alias: 'controller.postgridcontroller',
+    /**
+     * Called when the view is created
+     */
     init: function() {
-
+        this.getView().getStore().load();
     },
-    onAddUserButtonClick: function() {
-        Ext.create({
-            xtype: 'userform'
-        });
-    },
-    onViewUserDetailsButtonClick: function() {
+    onViewDetailsButtonClick: function() {
         var me = this;
         var record = me.getSelectedRecord();
         if (record) {
@@ -27,4 +25,4 @@ Ext.define('TutorialApp.view.users.UserGridController', {
             Ext.Msg.alert('No Item Selected', 'Please select an item from the list');
         }
     }
-})
+});

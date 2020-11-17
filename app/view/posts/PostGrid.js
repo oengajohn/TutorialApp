@@ -2,6 +2,7 @@ Ext.define('TutorialApp.view.posts.PostGrid', {
     extend: 'Ext.grid.Panel',
     xtype: 'postgrid',
     // alias:'widget.postgrid',
+    controller: 'postgridcontroller',
     store: {
         type: 'posts'
     },
@@ -22,9 +23,7 @@ Ext.define('TutorialApp.view.posts.PostGrid', {
         {
             xtype: 'button',
             text: 'View Details',
-            handler: function() {
-
-            }
+            handler: 'onViewDetailsButtonClick',
         }
     ],
     columns: [
@@ -40,7 +39,7 @@ Ext.define('TutorialApp.view.posts.PostGrid', {
         displayMsg: 'Display records {0} - {1} of {2}',
         emptyMsg: 'No Record to display'
     },
-    listeners: {
-        select: 'onItemSelected'
-    }
+    // listeners: {
+    //     select: 'onItemSelected'
+    // }
 });

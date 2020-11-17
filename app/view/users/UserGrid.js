@@ -30,8 +30,8 @@ Ext.define('TutorialApp.view.users.UserGrid', {
         { text: 'Name', dataIndex: 'name', flex: 1 },
         { text: 'UserName', dataIndex: 'username', flex: 1 },
         { text: 'Email', dataIndex: 'email', flex: 1 },
-        { text: 'Street', dataIndex: 'addressStreet', hidden: true, flex: 1 },
-        { text: 'Suite', dataIndex: 'addressSuite', hidden: true, flex: 1 },
+        { text: 'Street', dataIndex: 'address.street', hidden: true, flex: 1 },
+        { text: 'Suite', dataIndex: 'address.suite', hidden: true, flex: 1 },
         { text: 'City', dataIndex: 'address.city', hidden: true, flex: 1 },
         { text: 'ZipCode', dataIndex: 'address.zipcode', hidden: true, flex: 1 },
         { text: 'Latitude', dataIndex: 'address.geo.lat', hidden: true, flex: 1 },
@@ -49,7 +49,5 @@ Ext.define('TutorialApp.view.users.UserGrid', {
         displayMsg: 'Display records {0} - {1} of {2}',
         emptyMsg: 'No Record to display'
     },
-    listeners: {
-        select: 'onItemSelected'
-    }
+
 });

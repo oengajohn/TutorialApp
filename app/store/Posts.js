@@ -10,7 +10,7 @@ Ext.define('TutorialApp.store.Posts', {
             rootProperty: 'posts'
         }
     },
-    autoLoad: true,
+    // autoLoad: true, TODO: make the grid controller to load its data
     pageSize: 10
 
 })
