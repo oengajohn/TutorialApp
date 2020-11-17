@@ -4,5 +4,13 @@ Ext.define('TutorialApp.view.users.UserFormController', {
     /**
      * Called when the view is created
      */
-    init: function() {}
+    init: function() {},
+    onUserFormSubmit: function() {
+        var me = this,
+            form = me.getView().lookupReference('form').getForm();
+        console.log(form.getValues());
+    },
+    onUserFormCancel: function() {
+        this.getView().close();
+    }
 });

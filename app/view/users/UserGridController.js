@@ -14,6 +14,10 @@ Ext.define('TutorialApp.view.users.UserGridController', {
         var record = me.getSelectedRecord();
         if (record) {
             console.log(record);
+            var windowContainer = Ext.create({
+                xtype: 'userform'
+            });
+            windowContainer.lookupReference('form').getForm().loadRecord(record);
         }
     },
     getSelectedRecord: function() {

@@ -9,6 +9,7 @@ Ext.define('TutorialApp.view.users.UserForm', {
     items: [{
         xtype: 'form',
         layout: 'form',
+        reference: 'form',
 
         defaults: {
             xtype: 'textfield',
@@ -16,16 +17,22 @@ Ext.define('TutorialApp.view.users.UserForm', {
         },
         items: [{
                 xtype: 'numberfield',
+                name: 'id',
                 fieldLabel: 'User Id',
 
             },
             {
-
+                name: 'name',
                 fieldLabel: 'User Name',
             },
             {
-
+                name: 'email',
                 fieldLabel: 'Email',
+            },
+
+            {
+                name: 'address.street',
+                fieldLabel: 'Address Street',
             },
 
         ],
