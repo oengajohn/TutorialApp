@@ -23,5 +23,10 @@ Ext.define('TutorialApp.view.users.UserGridController', {
             windowContainer.lookupReference('form').getForm().loadRecord(record);
         }
     },
+    onFormFieldIllustrationButtonClick: function() {
+        Ext.create({
+            xtype: 'formfiledsillustration'
+        });
+    }
 
 })
