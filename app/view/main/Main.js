@@ -94,9 +94,9 @@ Ext.define('TutorialApp.view.main.Main', {
         }, {
             title: 'Settings',
             iconCls: 'fa-cog',
-            bind: {
-                html: '{loremIpsum}'
-            }
+            items: [{
+                xtype: 'absolutelayoutwindow'
+            }]
         }
     ]
 });
