@@ -97,6 +97,14 @@ Ext.define('TutorialApp.view.main.Main', {
             items: [{
                 xtype: 'absolutelayoutwindow'
             }]
+        },
+        {
+            title: 'Border Accordion',
+            iconCls: 'fa-cog',
+            items: [{
+                xtype: 'borderlayout'
+            }]
         }
+
     ]
 });
