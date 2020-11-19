@@ -71,6 +71,13 @@ Ext.define('TutorialApp.view.main.Main', {
     },
 
     items: [{
+            title: 'Users',
+            iconCls: 'fa-user',
+            items: [{
+                xtype: 'usergrid'
+            }]
+        },
+        {
             title: 'Home',
             iconCls: 'fa-home',
             // The following grid shares a store with the classic version's grid as well!
@@ -79,18 +86,11 @@ Ext.define('TutorialApp.view.main.Main', {
             }]
         },
         {
-            title: 'Users',
-            iconCls: 'fa-user',
-            items: [{
-                xtype: 'usergrid'
-            }]
-        },
-        {
             title: 'Groups',
             iconCls: 'fa-users',
-            bind: {
-                html: '{loremIpsum}'
-            }
+            items: [{
+                xtype: 'parentcontainer'
+            }]
         }, {
             title: 'Settings',
             iconCls: 'fa-cog',
