@@ -1,16 +1,16 @@
-Ext.define('TutorialApp.view.users.UserForm', {
+Ext.define('TutorialApp.view.users.TestWindow', {
     extend: 'Ext.window.Window',
-    xtype: 'userform',
-    controller: 'userformcontroller',
+    xtype: 'testwindow',
+    reference: 'testWindow',
     autoShow: true,
+    itemId: 'testId',
     modal: true,
     shadow: true,
-    width: 600,
     items: [{
         xtype: 'form',
         layout: 'form',
-        reference: 'form',
-        jsonSubmit: true,
+        reference: 'userform',
+
         defaults: {
             xtype: 'textfield',
             allowBlank: false
@@ -18,14 +18,13 @@ Ext.define('TutorialApp.view.users.UserForm', {
         items: [{
                 xtype: 'numberfield',
                 name: 'id',
-                allowBlank: true,
-                disabled: true,
                 fieldLabel: 'User Id',
 
             },
             {
                 name: 'name',
                 fieldLabel: 'User Name',
+
             },
             {
                 name: 'email',
@@ -37,17 +36,6 @@ Ext.define('TutorialApp.view.users.UserForm', {
                 fieldLabel: 'Address Street',
             },
 
-        ],
-        buttons: [{
-                text: 'Save',
-                formBind: true,
-                handler: 'onUserFormSubmit'
-            },
-            {
-                text: 'Cancel',
-                handler: 'onUserFormCancel'
-
-            }
         ]
     }]
 });

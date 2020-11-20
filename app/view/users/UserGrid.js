@@ -26,10 +26,28 @@ Ext.define('TutorialApp.view.users.UserGrid', {
         },
         {
             xtype: 'button',
+            text: 'Remove',
+            handler: 'onRemoveButtonClick'
+        },
+        {
+            xtype: 'numberfield',
+            reference: 'searchId',
+            emptyText: 'Id to search',
+            width: 100,
+            listeners: {
+                specialkey: 'onIdSearchEnterKey'
+            }
+        },
+        {
+            xtype: 'button',
+            text: 'Get Record',
+            handler: 'onGetButtonClick'
+        },
+        {
+            xtype: 'button',
             text: 'Form Field Illustration',
             handler: 'onFormFieldIllustrationButtonClick'
         },
-
     ],
     columns: [
         { text: 'User ID', dataIndex: 'id' },

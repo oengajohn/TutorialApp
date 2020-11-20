@@ -10,3 +10,5 @@
 
 - model
 - proxy
+
+http://dummy.restapiexample.com/employees

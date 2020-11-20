@@ -11,5 +11,4 @@ Ext.define('TutorialApp.store.Users', {
         }
     },
     autoLoad: true,
-    pageSize: 5,
 });
