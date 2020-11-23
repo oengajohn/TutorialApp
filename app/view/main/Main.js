@@ -10,7 +10,7 @@ Ext.define('TutorialApp.view.main.Main', {
     xtype: 'app-main',
 
     requires: [
-        'Ext.plugin.Viewport',
+        // 'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
     ],
 
