@@ -1,0 +1,24 @@
+{
+    "data": [{
+        "id": "1",
+        "text": "menu1",
+        "iconCls": "fa fa-group fa-lg",
+        "items": [{
+                "id": "2",
+                "text": "menu11",
+                "iconCls": "xf0c0",
+                "className": "panel",
+                "menu_id": "1",
+                "leaf": true
+            },
+            {
+                "id": "3",
+                "text": "menu12",
+                "iconCls": "xf007",
+                "className": "panel",
+                "menu_id": "1",
+                "leaf": true
+            }
+        ]
+    }]
+}
