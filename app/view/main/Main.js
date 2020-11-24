@@ -10,7 +10,7 @@ Ext.define('TutorialApp.view.main.Main', {
     xtype: 'app-main',
 
     requires: [
-        // 'Ext.plugin.Viewport',
+        'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
     ],
 
@@ -70,21 +70,21 @@ Ext.define('TutorialApp.view.main.Main', {
         }
     },
 
-    items: [{
+    items: [ {
+        title: 'Home',
+        iconCls: 'fa-home',
+        // The following grid shares a store with the classic version's grid as well!
+        items: [{
+            xtype: 'postgrid'
+        }]
+    },{
             title: 'Users',
             iconCls: 'fa-user',
             items: [{
                 xtype: 'usergrid'
             }]
         },
-        {
-            title: 'Home',
-            iconCls: 'fa-home',
-            // The following grid shares a store with the classic version's grid as well!
-            items: [{
-                xtype: 'postgrid'
-            }]
-        },
+
         {
             title: 'Groups',
             iconCls: 'fa-users',

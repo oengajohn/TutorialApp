@@ -22,6 +22,12 @@ Ext.define('TutorialApp.view.posts.PostGrid', {
         },
         {
             xtype: 'button',
+            text: 'Add Comment for Post',
+            // handler: 'onAddComment'
+            handler: 'onAddComment2'
+        },
+        {
+            xtype: 'button',
             text: 'View Details',
             handler: 'onViewDetailsButtonClick',
         }
