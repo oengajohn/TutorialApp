@@ -12,6 +12,13 @@ Ext.define('TutorialApp.view.users.UserGridController', {
             xtype: 'userform'
         });
     },
+    onRowClick:function( grid, record, element, rowIndex, e, eOpts ) {
+        var bioDataForm= Ext.ComponentQuery.query('tabpanelcustom #userdetailform')[0].getForm();
+        var addressdetailform=Ext.ComponentQuery.query('tabpanelcustom #addressdetailform')[0].getForm();
+        bioDataForm.loadRecord(record);
+        addressdetailform.loadRecord(record);
+
+    },
     onViewUserDetailsButtonClick: function() {
         var me = this;
         var record = me.getSelectedRecord();

@@ -73,5 +73,8 @@ Ext.define('TutorialApp.view.users.UserGrid', {
         displayMsg: 'Display records {0} - {1} of {2}',
         emptyMsg: 'No Record to display'
     },
+    listeners:{
+        rowclick:'onRowClick'
+    }
 
 });

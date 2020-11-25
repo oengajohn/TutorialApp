@@ -104,6 +104,12 @@ Ext.define('TutorialApp.view.main.Main', {
             items: [{
                 xtype: 'borderlayout'
             }]
+        } , {
+            title: 'Tab Panels',
+            iconCls: 'fa-cog',
+            items: [{
+                xtype: 'masterdetaillayout'
+            }]
         }
 
     ]
