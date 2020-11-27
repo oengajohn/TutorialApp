@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "makeId": 1,
+    "name": "Alhambra"
+  },
+  {
+    "id": 2,
+    "makeId": 1,
+    "name": "Altea"
+  },
+  {
+    "id": 3,
+    "makeId": 1,
+    "name": "Altea XL"
+  },
+  {
+    "id": 4,
+    "makeId": 1,
+    "name": "Cordoba Vario"
+  },
+  {
+    "id": 5,
+    "makeId": 2,
+    "name": "Captur"
+  },
+  {
+    "id": 6,
+    "makeId": 2,
+    "name": "Express"
+  },
+  {
+    "id": 7,
+    "makeId": 2,
+    "name": "Clio Grandtour"
+  },
+  {
+    "id": 8,
+    "makeId": 3,
+    "name": "205 Cabrio"
+  },
+  {
+    "id": 9,
+    "makeId": 3,
+    "name": "206 CC"
+  },
+  {
+    "id": 10,
+    "makeId": 3,
+    "name":  "207 CC"
+  },
+  {
+    "id": 11,
+    "makeId": 3,
+    "name":  "207 SW"
+  }
+]
